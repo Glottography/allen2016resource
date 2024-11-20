@@ -153,6 +153,9 @@ class Dataset(BaseDataset):
         return add_markdown_text(
             BaseDataset.cmd_readme(self, args),
             """
+
+### Coverage
+
 ```geojson
 {}
 ```
