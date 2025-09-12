@@ -4,15 +4,18 @@
 
 **CLDF Metadata**: [Generic-metadata.json](./Generic-metadata.json)
 
-This dataset provides contact-era ethnolinguistic areas in central California as described in Fig. 1 in Allen et al. 2016.
+**Sources**: [sources.bib](./sources.bib)
+
+This dataset provides non-overlapping, contact-era ethnolinguistic areas in central California as described in Fig. 1 in Allen et al. 2016.
 
 property | value
  --- | ---
 [dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | M.W. Allen, R.L. Bettinger, B.F. Codding, T.L. Jones, A.W. Schwitalla, Resource scarcity drives lethal aggression among prehistoric hunter-gatherers in central California, Proc. Natl. Acad. Sci. U.S.A. 113 (43) 12120-12125, https://doi.org/10.1073/pnas.1607996113 (2016).
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF Generic](http://cldf.clld.org/v1.0/terms.rdf#Generic)
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
+[dc:spatial](http://purl.org/dc/terms/spatial) | westlimit=-123.6; southlimit=36.3; eastlimit=-119.1; northlimit=41.4
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/Glottography/allen2016resource
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/Glottography/allen2016resource/tree/a16aff9">Glottography/allen2016resource a16aff9</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.1">Glottolog v5.1</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/Glottography/allen2016resource/tree/60ee197">Glottography/allen2016resource 60ee197</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.2">Glottolog v5.2</a></li></ol>
 [prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.12.3</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | allen2016resource
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
@@ -56,17 +59,19 @@ Name/Property | Datatype | Description
 [Longitude](http://cldf.clld.org/v1.0/terms.rdf#longitude) | `decimal`<br>&ge; -180<br>&le; 180 | 
 [Glottocode](http://cldf.clld.org/v1.0/terms.rdf#glottocode) | `string`<br>Regex: `[a-z0-9]{4}[1-9][0-9]{3}` | 
 [ISO639P3code](http://cldf.clld.org/v1.0/terms.rdf#iso639P3code) | `string`<br>Regex: `[a-z]{3}` | 
-[Contribution_IDs](http://cldf.clld.org/v1.0/terms.rdf#contributionReference) | list of `string` (separated by ` `) | List of identifiers of shapes that were aggregated to create the shape referenced by Speaker_Area.<br>References [contributions.csv::ID](#table-contributionscsv)
+[Feature_IDs](http://cldf.clld.org/v1.0/terms.rdf#contributionReference) | list of `string` (separated by ` `) | List of identifiers of features that were aggregated to create the feature referenced by Speaker_Area.<br>References [contributions.csv::ID](#table-contributionscsv)
+`Glottolog_Languoid_Level` | `string`<br>Valid choices:<br> `dialect` `language` `family` | https://glottolog.org/meta/glossary#Languoid
+`Family` | `string` | Name of the top-level family for the languoid in the Glottolog classification. A null value in this column marks 1) top-level families in case Glottolog_Languoid_Level is 'family' and 2) isolates in case Glottolog_Languoid_Level is 'language'.
 [Speaker_Area](http://cldf.clld.org/v1.0/terms.rdf#speakerArea) | `string` | References [media.csv::ID](#table-mediacsv)
 
 ## <a name="table-contributionscsv"></a>Table [contributions.csv](./contributions.csv)
 
-We list the individual shapes from the source dataset as contributions in order to preserve the original metadata.
+We list the individual features from the source dataset as contributions in order to preserve the original metadata and a point of reference for the aggregated shapes.
 
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ContributionTable](http://cldf.clld.org/v1.0/terms.rdf#ContributionTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 15
+[dc:extent](http://purl.org/dc/terms/extent) | 14
 
 
 ### Columns
@@ -78,8 +83,9 @@ Name/Property | Datatype | Description
 [Description](http://cldf.clld.org/v1.0/terms.rdf#description) | `string` | 
 [Contributor](http://cldf.clld.org/v1.0/terms.rdf#contributor) | `string` | 
 [Citation](http://cldf.clld.org/v1.0/terms.rdf#citation) | `string` | 
-[Glottocode](http://cldf.clld.org/v1.0/terms.rdf#glottocode) | `string`<br>Regex: `[a-z0-9]{4}[1-9][0-9]{3}` | References a Glottolog languoid most closely matching linguistic entity described by the shape.
-[Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | 
-[Media_ID](http://cldf.clld.org/v1.0/terms.rdf#mediaReference) | `string` | Shapes are linked to GeoJSON files that store the geo data.<br>References [media.csv::ID](#table-mediacsv)
+[Glottocode](http://cldf.clld.org/v1.0/terms.rdf#glottocode) | `string`<br>Regex: `[a-z0-9]{4}[1-9][0-9]{3}` | References a Glottolog languoid most closely matching the linguistic entity described by the feature.
+[Year](http://purl.org/dc/terms/temporal) | `string`<br>Regex: `[0-9]{3,4}|traditional` | The time period to which the feature relates, specified as year AD or with the keyword 'traditional', meaning either the time of contact with European maritime powers or period when an ancient language was spoken.
+[Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | References [sources.bib::BibTeX-key](./sources.bib)
+[Media_ID](http://cldf.clld.org/v1.0/terms.rdf#mediaReference) | `string` | Features are linked to GeoJSON files that store the geo data.<br>References [media.csv::ID](#table-mediacsv)
 `Map_Name` | `string` | Name of the map as given in the source publication.
 

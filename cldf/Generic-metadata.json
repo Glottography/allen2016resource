@@ -7,21 +7,23 @@
     ],
     "dc:bibliographicCitation": "M.W. Allen, R.L. Bettinger, B.F. Codding, T.L. Jones, A.W. Schwitalla, Resource scarcity drives lethal aggression among prehistoric hunter-gatherers in central California, Proc. Natl. Acad. Sci. U.S.A. 113 (43) 12120-12125, https://doi.org/10.1073/pnas.1607996113 (2016).",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
-    "dc:description": "This dataset provides contact-era ethnolinguistic areas in central California as described in Fig. 1 in Allen et al. 2016.",
+    "dc:description": "This dataset provides non-overlapping, contact-era ethnolinguistic areas in central California as described in Fig. 1 in Allen et al. 2016.",
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:source": "sources.bib",
+    "dc:spatial": "westlimit=-123.6; southlimit=36.3; eastlimit=-119.1; northlimit=41.4",
     "dc:title": "Glottography dataset derived from Allen et al. 2016 \"Resource scarcity drives lethal aggression among prehistoric hunter-gatherers in central California\"",
     "dcat:accessURL": "https://github.com/Glottography/allen2016resource",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/Glottography/allen2016resource",
             "rdf:type": "prov:Entity",
-            "dc:created": "a16aff9",
+            "dc:created": "60ee197",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v5.1",
+            "dc:created": "v5.2",
             "dc:title": "Glottolog"
         }
     ],
@@ -158,10 +160,22 @@
                         "name": "ISO639P3code"
                     },
                     {
-                        "dc:description": "List of identifiers of shapes that were aggregated to create the shape referenced by Speaker_Area.",
+                        "dc:description": "List of identifiers of features that were aggregated to create the feature referenced by Speaker_Area.",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributionReference",
                         "separator": " ",
-                        "name": "Contribution_IDs"
+                        "name": "Feature_IDs"
+                    },
+                    {
+                        "dc:description": "https://glottolog.org/meta/glossary#Languoid",
+                        "datatype": {
+                            "base": "string",
+                            "format": "dialect|language|family"
+                        },
+                        "name": "Glottolog_Languoid_Level"
+                    },
+                    {
+                        "dc:description": "Name of the top-level family for the languoid in the Glottolog classification. A null value in this column marks 1) top-level families in case Glottolog_Languoid_Level is 'family' and 2) isolates in case Glottolog_Languoid_Level is 'language'.",
+                        "name": "Family"
                     },
                     {
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#speakerArea",
@@ -182,7 +196,7 @@
                     },
                     {
                         "columnReference": [
-                            "Contribution_IDs"
+                            "Feature_IDs"
                         ],
                         "reference": {
                             "resource": "contributions.csv",
@@ -200,8 +214,8 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ContributionTable",
-            "dc:description": "We list the individual shapes from the source dataset as contributions in order to preserve the original metadata.",
-            "dc:extent": 15,
+            "dc:description": "We list the individual features from the source dataset as contributions in order to preserve the original metadata and a point of reference for the aggregated shapes.",
+            "dc:extent": 14,
             "tableSchema": {
                 "columns": [
                     {
@@ -238,7 +252,7 @@
                         "name": "Citation"
                     },
                     {
-                        "dc:description": "References a Glottolog languoid most closely matching linguistic entity described by the shape.",
+                        "dc:description": "References a Glottolog languoid most closely matching the linguistic entity described by the feature.",
                         "datatype": {
                             "base": "string",
                             "format": "[a-z0-9]{4}[1-9][0-9]{3}"
@@ -248,12 +262,21 @@
                         "name": "Glottocode"
                     },
                     {
+                        "dc:description": "The time period to which the feature relates, specified as year AD or with the keyword 'traditional', meaning either the time of contact with European maritime powers or period when an ancient language was spoken.",
+                        "datatype": {
+                            "base": "string",
+                            "format": "[0-9]{3,4}|traditional"
+                        },
+                        "propertyUrl": "http://purl.org/dc/terms/temporal",
+                        "name": "Year"
+                    },
+                    {
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
                         "separator": ";",
                         "name": "Source"
                     },
                     {
-                        "dc:description": "Shapes are linked to GeoJSON files that store the geo data.",
+                        "dc:description": "Features are linked to GeoJSON files that store the geo data.",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#mediaReference",
                         "name": "Media_ID"
                     },

@@ -1,17 +1,17 @@
-ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Contribution_IDs,Speaker_Area
-baym1241,Bay Miwok,,37.784,-122.419,baym1241,,1,languages
-coas1301,Coast Miwok,,38.3285,-122.994,coas1301,,2,languages
-nise1244,Nisenan,,38.047,-120.393,nise1244,,4,languages
-nort2951,Northwest Maidu,,39.6721,-121.368,nort2951,,7,languages
-nort2952,Northeast Maidu,,40.4102,-120.645,nort2952,,15,languages
-patw1250,Patwin,,39.2143,-122.0094,patw1250,,14,languages
-plai1259,Plains Miwok,,38.39772,-121.653344,plai1259,,8,languages
-wapp1239,Wappo,,38.25,-122.5,wapp1239,,10,languages
-wint1259,Wintu,,39.7176,-122.445,wint1259,,5 11,languages
-yana1271,Yana,,39.2769,-121.608,yana1271,,12 13,languages
-yoku1256,Northern Yokuts,,36.3167,-119.721,yoku1256,,6,languages
-maid1262,Maiduan,,,,maid1262,,4 7 15,families
-miwo1274,Miwok-Costanoan,,,,miwo1274,,1 2 3 8 9,families
-wint1258,Wintuan,,,,wint1258,,5 11 14,families
-yoku1255,Yokutsan,,,,yoku1255,,6,families
-yuki1242,Yuki-Wappo,,,,yuki1242,,10,families
+ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Feature_IDs,Glottolog_Languoid_Level,Family,Speaker_Area
+baym1241,Bay Miwok,,37.784,-122.419,baym1241,,1,language,Miwok-Costanoan,languages
+coas1301,Coast Miwok,,38.3285,-122.994,coas1301,,2,language,Miwok-Costanoan,languages
+nise1244,Nisenan,,38.047,-120.393,nise1244,,9,language,Maiduan,languages
+nort2951,Northwest Maidu,,39.6721,-121.368,nort2951,,5,language,Maiduan,languages
+nort2952,Northeast Maidu,,40.4102,-120.645,nort2952,,6,language,Maiduan,languages
+patw1250,Patwin,,39.2143,-122.0094,patw1250,,11,language,Wintuan,languages
+plai1259,Plains Miwok,,38.39772,-121.653344,plai1259,,10,language,Miwok-Costanoan,languages
+wapp1239,Wappo,,38.25,-122.5,wapp1239,,12,language,Yuki-Wappo,languages
+wint1259,Wintu,,39.7176,-122.445,wint1259,,4 13,language,Wintuan,languages
+yana1271,Yana,,39.2769,-121.608,yana1271,,14,language,,languages
+yoku1256,Northern Yokuts,,36.3167,-119.721,yoku1256,,8,language,Yokutsan,languages
+maid1262,Maiduan,,,,maid1262,,5 6 9,family,,families
+miwo1274,Miwok-Costanoan,,,,miwo1274,,1 2 3 7 10,family,,families
+wint1258,Wintuan,,,,wint1258,,4 11 13,family,,families
+yoku1255,Yokutsan,,,,yoku1255,,8,family,,families
+yuki1242,Yuki-Wappo,,,,yuki1242,,12,family,,families

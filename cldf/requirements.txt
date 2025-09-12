@@ -6,13 +6,14 @@ babel==2.16.0
 bibtexparser==2.0.0b7
 bs4==0.0.2
 certifi==2024.8.30
-cldfbench==1.14.0
--e git+https://github.com/Glottography/asher2007world@7563fdc4bc82ae0a737f7238ab918b33583b8138#egg=cldfbench_asher2007world
+chardet==5.2.0
+cldfbench==1.14.1
+-e git+https://github.com/Glottography/asher2007world@349af75579910f904d89a7bb52caa10e0698d88b#egg=cldfbench_asher2007world
 cldfcatalog==1.5.1
--e git+https://github.com/cldf/cldfgeojson@d0b95cebfb259e2b64a3e050b694c09efec65045#egg=cldfgeojson
+-e git+https://github.com/cldf/cldfgeojson@60611e1455866404cdfb6695292a0b3dfe15adf1#egg=cldfgeojson
 cldfzenodo==2.1.2
 click==8.1.7
-clldutils==3.24.0
+clldutils==3.24.1
 colorama==0.4.6
 colorlog==6.9.0
 csvw==3.5.1
@@ -31,10 +32,12 @@ newick==1.9.0
 numpy==2.1.3
 openpyxl==3.1.5
 packaging==24.2
+platformdirs==4.3.6
 pluggy==1.5.0
 pybtex==0.24.0
 pycldf==1.39.0
 pycountry==24.6.1
+pyglottography==1.0.0
 pyglottolog==3.14.0
 Pygments==2.18.0
 pylatexenc==2.10

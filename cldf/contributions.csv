@@ -1,16 +1,15 @@
-ID,Name,Description,Contributor,Citation,Glottocode,Source,Media_ID,Map_Name
-1,Bay Miwok,,,,baym1241,,shapes,Fig. 1.
-2,Coast Miwok,,,,coas1301,,shapes,Fig. 1.
-3,Costanoan,,,,cost1250,,shapes,Fig. 1.
-4,Nisenan,,,,nise1244,,shapes,Fig. 1.
-5,Hill Nomlaki / River Nomlaki,,,,noml1242,,shapes,Fig. 1.
-6,N. Valley Yokuts,,,,nort2937,,shapes,Fig. 1.
-7,Konkow,,,,nort2951,,shapes,Fig. 1.
-8,Plains Miwok,,,,plai1259,,shapes,Fig. 1.
-9,N. Sierra Miwok / Central Sierra Miwok / S. Sierra Miwok,,,,sier1249,,shapes,Fig. 1.
-10,Wappo,,,,wapp1239,,shapes,Fig. 1.
-11,Wintu,,,,wint1259,,shapes,Fig. 1.
-12,Yana,,,,yana1271,,shapes,Fig. 1.
-13,Yana,,,,yana1271,,shapes,Fig. 1.
-14,S. Patwin / Hill Patwin / River Patwin,,,,patw1250,,shapes,Fig. 1.
-15,Mountain Maidu,,,,nort2952,,shapes,Fig. 1.
+ID,Name,Description,Contributor,Citation,Glottocode,Year,Source,Media_ID,Map_Name
+1,Bay Miwok,,,,baym1241,traditional,allen2016resource,features,Fig. 1.
+2,Coast Miwok,,,,coas1301,traditional,allen2016resource,features,Fig. 1.
+3,Costanoan,,,,cost1250,traditional,allen2016resource,features,Fig. 1.
+4,Hill Nomlaki / River Nomlaki,,,,noml1242,traditional,allen2016resource,features,Fig. 1.
+5,Konkow,,,,nort2951,traditional,allen2016resource,features,Fig. 1.
+6,Mountain Maidu,,,,nort2952,traditional,allen2016resource,features,Fig. 1.
+7,N. Sierra Miwok / Central Sierra Miwok / S. Sierra Miwok,,,,sier1249,traditional,allen2016resource,features,Fig. 1.
+8,N. Valley Yokuts,,,,nort2937,traditional,allen2016resource,features,Fig. 1.
+9,Nisenan,,,,nise1244,traditional,allen2016resource,features,Fig. 1.
+10,Plains Miwok,,,,plai1259,traditional,allen2016resource,features,Fig. 1.
+11,S. Patwin / Hill Patwin / River Patwin,,,,patw1250,traditional,allen2016resource,features,Fig. 1.
+12,Wappo,,,,wapp1239,traditional,allen2016resource,features,Fig. 1.
+13,Wintu,,,,wint1259,traditional,allen2016resource,features,Fig. 1.
+14,Yana,,,,yana1271,traditional,allen2016resource,features,Fig. 1.
