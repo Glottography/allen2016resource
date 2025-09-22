@@ -20,5 +20,10 @@
         {
             "name": "The Glottography Consortium"
         }
+    ],
+    "communities": [
+        {
+            "identifier": "glottography"
+        }
     ]
 }

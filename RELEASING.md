@@ -11,7 +11,7 @@ cldfbench download cldfbench_allen2016resource.py
 ```shell
 cldfbench makecldf cldfbench_allen2016resource.py --glottolog-version v5.2
 cldfbench cldfreadme cldfbench_allen2016resource.py
-cldfbench zenodo cldfbench_allen2016resource.py
+cldfbench zenodo --communities glottography cldfbench_allen2016resource.py
 cldfbench readme cldfbench_allen2016resource.py
 ```
 
@@ -26,7 +26,7 @@ cldfbench geojson.validate cldf
 ```
 
 ```shell
-cldfbench geojson.glottolog_distance cldf
+cldfbench geojson.glottolog_distance cldf --glottolog-version v5.2 --format pipe
 ```
 
 | ID | Distance | Contained | NPolys |
