@@ -1,4 +1,7 @@
 ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Feature_IDs,Glottolog_Languoid_Level,Family,Speaker_Area
+noml1242,Nomlaki,,,,noml1242,,4,dialect,Wintuan,dialects
+nort2937,Northern Hill/Valley Yokuts,,,,nort2937,,8,dialect,Yokutsan,dialects
+vall1251,Valley Yokuts,,,,vall1251,,8,dialect,Yokutsan,dialects
 baym1241,Bay Miwok,,37.784,-122.419,baym1241,,1,language,Miwok-Costanoan,languages
 coas1301,Coast Miwok,,38.3285,-122.994,coas1301,,2,language,Miwok-Costanoan,languages
 nise1244,Nisenan,,38.047,-120.393,nise1244,,9,language,Maiduan,languages

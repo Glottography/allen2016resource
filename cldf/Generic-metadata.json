@@ -17,7 +17,7 @@
         {
             "rdf:about": "https://github.com/Glottography/allen2016resource",
             "rdf:type": "prov:Entity",
-            "dc:created": "cee4113",
+            "dc:created": "ab9b29e",
             "dc:title": "Repository"
         },
         {
@@ -42,7 +42,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 3,
+            "dc:extent": 4,
             "tableSchema": {
                 "columns": [
                     {
@@ -96,7 +96,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 16,
+            "dc:extent": 19,
             "tableSchema": {
                 "columns": [
                     {
