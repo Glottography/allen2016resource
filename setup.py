@@ -13,6 +13,7 @@ setup(
     },
     install_requires=[
         'cldfbench',
+        'pyglottography>=2.0',
     ],
     extras_require={
         'test': [
