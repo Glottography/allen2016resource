@@ -25,6 +25,11 @@ cldf validate cldf
 cldfbench geojson.validate cldf
 ```
 
+```
+14      valid features
+19      valid speaker areas
+```
+
 ```shell
 cldfbench geojson.glottolog_distance cldf --glottolog-version v5.2 --format pipe
 ```
@@ -42,3 +47,12 @@ cldfbench geojson.glottolog_distance cldf --glottolog-version v5.2 --format pipe
 | wint1259 | 0.00 | True | 1 |
 | yana1271 | 0.54 | False | 1 |
 | yoku1256 | 0.46 | False | 1 |
+
+
+## Release
+
+Run
+```
+cldfbench glottography.release cldfbench_allen2016resource.py vX.Y
+```
+and follow the instructions given in the output of the command.

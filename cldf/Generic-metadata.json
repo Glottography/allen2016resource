@@ -17,7 +17,7 @@
         {
             "rdf:about": "https://github.com/Glottography/allen2016resource",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0",
+            "dc:created": "v1.0-1-gfe34bd4",
             "dc:title": "Repository"
         },
         {
